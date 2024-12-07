@@ -11,7 +11,7 @@
 #
 
 #Some default values
-TARGET=radix
+TARGET=lu_ncb
 
 #Arguments
 if [ -n "$1" ]
@@ -37,24 +37,23 @@ fi
 #Determine program name, file names & arguments
 case "${INPUTSIZE}" in 
 "test"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n262144 -m524288 -t";;
+	PROGARGS="-p$NUMPROCS -n512 -b16";;
 "simdev"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n262144 -m524288 -t";;
+	PROGARGS="-p$NUMPROCS -n512 -b16";;
 "simsmall"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n4194304 -m2147483647 -t";;
+	PROGARGS="-p$NUMPROCS -n512 -b16";;
 "simmedium"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n16777216 -m2147483647 -t";;
+	PROGARGS="-p$NUMPROCS -n1024 -b16";;
 "simlarge"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n67108864 -m2147483647 -t";;
+	PROGARGS="-p$NUMPROCS -n2048 -b16";;
 "native"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n268435456 -m2147483647 -t";;
+	PROGARGS="-p$NUMPROCS -n8096 -b32";;
 *)  
 	echo "Input size error"
 	exit 1;;
 esac
  
-
-PROG="${PARSECDIR}/ext/splash2x/kernels/${TARGET}/inst/${PARSECPLAT}/bin/${TARGET}"
+PROG="${PARSECDIR}/ext/splash2/kernels/${TARGET}/inst/${PARSECPLAT}/bin/${TARGET}"
 
 
 #Some tests

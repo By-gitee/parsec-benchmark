@@ -37,17 +37,17 @@ fi
 #Determine program name, file names & arguments
 case "${INPUTSIZE}" in 
 "test"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n262144 -m524288 -t";;
+	PROGARGS="-p${NUMPROCS} -r4096 -n262144 -m524288";;
 "simdev"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n262144 -m524288 -t";;
+	PROGARGS="-p${NUMPROCS} -r4096 -n262144 -m524288";;
 "simsmall"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n4194304 -m2147483647 -t";;
+	PROGARGS="-p${NUMPROCS} -r4096 -n4194304 -m2147483647";;
 "simmedium"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n16777216 -m2147483647 -t";;
+	PROGARGS="-p${NUMPROCS} -r4096 -n16777216 -m2147483647";;
 "simlarge"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n67108864 -m2147483647 -t";;
+	PROGARGS="-p${NUMPROCS} -r4096 -n67108864 -m2147483647";;
 "native"	) 
-	PROGARGS="-p${NUMPROCS} -r4096 -n268435456 -m2147483647 -t";;
+	PROGARGS="-p${NUMPROCS} -r4096 -n268435456 -m2147483647";;
 *)  
 	echo "Input size error"
 	exit 1;;

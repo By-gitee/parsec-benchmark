@@ -51,6 +51,8 @@ using namespace tbb;
 
 #define NUM_RUNS 100
 
+#define ERR_CHK 1
+
 typedef struct OptionData_ {
         fptype s;          // spot price
         fptype strike;     // strike price
