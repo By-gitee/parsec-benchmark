@@ -37,17 +37,17 @@ fi
 #Determine program name, file names & arguments
 case "${INPUTSIZE}" in 
 "test"	) 
-	PROGARGS="-p$NUMPROCS -n512 -b16";;
+	PROGARGS="-p$NUMPROCS -n512 -b16 -t";;
 "simdev"	) 
-	PROGARGS="-p$NUMPROCS -n512 -b16";;
+	PROGARGS="-p$NUMPROCS -n512 -b16 -t";;
 "simsmall"	) 
-	PROGARGS="-p$NUMPROCS -n512 -b16";;
+	PROGARGS="-p$NUMPROCS -n512 -b16 -t";;
 "simmedium"	) 
-	PROGARGS="-p$NUMPROCS -n1024 -b16";;
+	PROGARGS="-p$NUMPROCS -n1024 -b16 -t";;
 "simlarge"	) 
-	PROGARGS="-p$NUMPROCS -n2048 -b16";;
+	PROGARGS="-p$NUMPROCS -n2048 -b16 -t";;
 "native"	) 
-	PROGARGS="-p$NUMPROCS -n8096 -b32";;
+	PROGARGS="-p$NUMPROCS -n8096 -b32 -t";;
 *)  
 	echo "Input size error"
 	exit 1;;

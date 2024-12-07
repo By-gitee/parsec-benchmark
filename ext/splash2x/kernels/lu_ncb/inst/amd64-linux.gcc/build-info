@@ -1,7 +1,7 @@
 PARSEC Compile Information
 ==========================
 Package 'splash2x.lu_ncb'
-Built on Sat Dec 7 02:13:36 PM CST 2024
+Built on Sat Dec 7 02:46:02 PM CST 2024
 
 Configure arguments:  --prefix=/home/zby/test202412/parsec-benchmark/ext/splash2x/kernels/lu_ncb/inst/amd64-linux.gcc
 
